@@ -15,7 +15,7 @@ document.querySelectorAll(".reveal").forEach((el, idx) => {
 });
 
 // Replace with your deployed Google Apps Script web app URL.
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzI2jb7qOTgZDfdpyv01EwUcLGUFh95_12rfHR04wM/dev";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFVwrEag4OzFMWGfYLdZdMJr87VhIPcX6gj-8q35_HhtyasTWyUF20DHgUqfGTei--/exec";
 
 const signupForm = document.getElementById("signup-form");
 const statusText = document.getElementById("form-status");
