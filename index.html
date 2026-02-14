@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Housing | AI Workflow Platform</title>
+  <meta name="description" content="ABC Housing automates property operations by connecting Google Sheets and GitHub with AI-powered workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#">ABC <span>Housing</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+    <a class="btn btn-ghost" href="#signup">Book Demo</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AI Operations For Property Teams</p>
+      <h1>Run housing workflows from <span>Google Sheets</span> to <span>GitHub</span>.</h1>
+      <p class="subtext">
+        ABC Housing transforms your spreadsheet rules into versioned, auditable automation. Manage leads, listings, and reporting with AI-driven pipelines.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#signup">Start Free</a>
+        <a class="btn btn-outline" href="#workflow">See Workflow</a>
+      </div>
+      <div class="hero-stats">
+        <article>
+          <h3>75%</h3>
+          <p>faster operations updates</p>
+        </article>
+        <article>
+          <h3>2.8x</h3>
+          <p>quicker listing turnaround</p>
+        </article>
+        <article>
+          <h3>100%</h3>
+          <p>tracked in git history</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="integrations reveal" aria-label="Integrations">
+      <p class="eyebrow">Native Integrations</p>
+      <div class="logo-row">
+        <article class="logo-card">
+          <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub logo" width="28" height="28" loading="lazy" />
+          <span>GitHub</span>
+        </article>
+        <article class="logo-card">
+          <img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Google Sheets logo" width="28" height="28" loading="lazy" />
+          <span>Google Sheets</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <article class="card reveal">
+        <h3>Sheets as Command Center</h3>
+        <p>Use familiar cells and formulas to control prompts, business logic, and automation states.</p>
+      </article>
+      <article class="card reveal">
+        <h3>GitHub-backed Safety</h3>
+        <p>Every workflow change becomes a commit and pull request for review and rollback confidence.</p>
+      </article>
+      <article class="card reveal">
+        <h3>AI Quality Monitoring</h3>
+        <p>Track output consistency, detect drift, and enforce approval rules before deployments go live.</p>
+      </article>
+    </section>
+
+    <section id="workflow" class="workflow">
+      <h2>How it works</h2>
+      <div class="steps">
+        <article class="step reveal">
+          <span>01</span>
+          <h3>Design in Sheets</h3>
+          <p>Define lead intake, maintenance, and reporting flows in one shared spreadsheet.</p>
+        </article>
+        <article class="step reveal">
+          <span>02</span>
+          <h3>Sync to GitHub</h3>
+          <p>ABC Housing exports your logic into versioned configs and opens pull requests automatically.</p>
+        </article>
+        <article class="step reveal">
+          <span>03</span>
+          <h3>Deploy with CI</h3>
+          <p>Run checks, publish automations, and monitor production behavior continuously.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="signup" class="signup reveal">
+      <p class="eyebrow">Early Access</p>
+      <h2>Join ABC Housing waitlist</h2>
+      <p>Submit your details and our team will reach out with onboarding steps.</p>
+
+      <form id="signup-form" class="signup-form" novalidate>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="fullName" type="text" autocomplete="name" required />
+
+        <label for="email">Work Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" autocomplete="organization" required />
+
+        <label for="team-size">Team Size</label>
+        <select id="team-size" name="teamSize" required>
+          <option value="">Select a range</option>
+          <option value="1-10">1-10</option>
+          <option value="11-50">11-50</option>
+          <option value="51-200">51-200</option>
+          <option value="201+">201+</option>
+        </select>
+
+        <button class="btn btn-primary" type="submit">Request Access</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>ABC Housing | AI automation for modern housing operations.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
